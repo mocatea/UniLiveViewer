@@ -37,7 +37,7 @@ a {
     background-color: rgba(255,255,255,0.3);
 }
 
-.top-wrapper{
+/*.top-wrapper{
     /*width: 100%;
     min-height: 400px;
     object-fit: cover;
@@ -49,7 +49,7 @@ a {
     /*background-size:cover;/*背景自動調整*/
     /*text-align: center;*/
     /*background-image: url(image/top02.png);*/
-}
+/*}*/
 
 img{
     width: 100%;
@@ -78,4 +78,12 @@ h1{
     min-height:100px;
     /*max-height:400px;*/
     background-color: #333;
+}
+
+.footer a{
+    font-size:30px;
+    padding: 20px 25px 20px 25px;/*ボーダー内余白*/
+    color: white;
+    display: block;/*ブロック要素ボックス化、aの横並びが縦に？*/
+    float: left;/*縦を横並びに戻す*/
 }
