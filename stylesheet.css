@@ -51,7 +51,7 @@ a {
     /*background-image: url(image/top02.png);*/
 /*}*/
 
-img{
+.top-wrapper img{
     width: 100%;
 }
 
@@ -64,6 +64,10 @@ img{
     margin: 0px auto;
     /*margin: 0 auto;/*ボーダーの外側に余白なし*/
     /*max-width:728px;*/
+}
+
+.main img{
+    border: 5px solid #808080;
 }
 
 h1{
