@@ -1,0 +1,101 @@
+body {
+    margin: 0;/*ボーダー外余白
+    font-family: "Hiragino Kaku Gothic ProN";/*フォント*/
+}
+
+.header {
+    height: 65px;
+    width: 100%;
+    background-color:rgba(34,49,52,0.9);
+    position :fixed;/*位置固定*/
+    top: 0;
+    z-index: 10;/*描画順*/
+}
+
+.header-right{
+    float: right;
+}
+
+.header-right a{
+    line-height: 65px;/*行ボックスの高さ*/
+    padding: 0px 25px 0px 25px;/*ボーダー内余白*/
+    color: white;
+    display: block;/*ブロック要素ボックス化、aの横並びが縦に？*/
+    float: left;/*縦を横並びに戻す*/
+    transition: all 0.5s;/*状態遷移の時間*/
+    text-decoration: none;/*テキスト傍線のスタイル*/
+}
+
+/*カーソルが重なった時*/
+.header-right a:hover{
+    color: black;
+    background-color: rgba(255,255,255,0.3);
+}
+
+.top-wrapper img{
+    width: 100%;
+}
+
+.main{
+    max-width:800px;
+    margin: 0px auto;
+}
+
+.box{
+    display: flex;
+}
+
+.applab{
+    height: 114px;
+    width: 200px;
+    margin:10px 0px 0px 10px;
+}
+
+.applab img{
+    width: 100%;
+}
+.applab p{
+    padding: 0px 0px 0px 30px;/*ボーダー内余白*/
+}
+
+.faq img{
+    margin:0px 0px 20px 0px;
+    border: 4px solid #808080;
+}
+
+h1{
+    margin:30px 0px 0px 0px;
+    border-bottom: 2px solid rgb(77, 77, 77);/*線のスタイル*/
+}
+
+iframe{
+    padding: 10px 0px 0px 0px;/*ボーダー内余白*/
+}
+
+table th{
+    text-align: left;
+    padding: 0px 10px 0px 0px;/*ボーダー内余白*/
+    margin: 0;
+}
+
+td p{
+    display:inline;/*改行しない*/
+}
+
+.footer{
+    min-height:100px;
+    background-color: #333;
+}
+
+.footer a{
+    font-size:30px;
+    padding: 20px 25px 20px 25px;/*ボーダー内余白*/
+    color: white;
+    display: block;/*ブロック要素ボックス化、aの横並びが縦に？*/
+    float: left;/*縦を横並びに戻す*/
+    text-decoration: none;/*テキスト傍線のスタイル*/
+}
+
+p{
+    margin: 0px 0px 0px 0px;
+}

@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8">
     <title>Uni Live Viewer</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
 <body>
     <div class="header">
         <div class="header-right"> 
             <a href="#"></a>
-            <a href="PrivacyPolicy.html">プライバシーポリシー</a>
+            <a href="WebPrivacyPolicy.html">プライバシーポリシー</a>
             <a href="javascript:OnLinkClick_scrDown();" >お問い合わせ</a>
         </div>
     </div>
@@ -18,54 +18,105 @@
         <img src ="image/top.png" alt="トップ絵" title="トップ">
     </div>
     <div class="main">
-        <h1>作品情報</h1>
-        <table>
-            <tr>
-                <th>タイトル</th>
-                <td>Uni Live Viewer</td>
-            </tr>
-            <tr>
-                <th>ジャンル</th>
-                <td>VRライブビューア</td>
-            </tr>
-            <tr>
-                <th>対応機種</th>
-                <td>OculusQuest・Oculus Quest2</td>
-            </tr>
-            <tr>
-                <th>配信Store</th>
-                <td><a href="https://www.oculus.com/experiences/quest/4108471262596874/" target="_blank" rel="noopener noreferrer"><b>App Lab(Oculus)</b></a></td>
-            </tr>
-            <tr>
-                <th>制作者</th>
-                <td>Nanacielという活動名の個人開発者です。</td>
-            </tr>
-        </table>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Iu60nYE4suk" 
-            ?loop=1
-            playlist=Iu60nYE4suk
-            &autoplay=0
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
-        <h1>クレジット</h1>
-        <p>モデル・・・Unity Technologies Japan</p>
-        <p>画像・・・Unity Technologies Japan、icooon-mono、魔法陣 背景ジェネレータ</p>
-        <p>音声・・・Unity Technologies Japan、効果音ラボ、魔王魂、OtoLogic</p>
-        <p>アセット・・・Oculus integration、Magica Cloth、UniVRM
-        </p>
-        <h1>FAQ</h1>
-        <h3>・VRMの読み込み方が分からない</h3>
-        <p>ファイルのアクセスを許可して一度アプリを起動すると、アプリ専用フォルダが作成されます</p>
-        <img src ="image/qa01.png" alt="Questアクセス許可" title="フォルダアクセス許可確認">
-        <p>PCで以下フォルダにアクセスし、VRMファイルを追加してください</p>
-        <p><u>※自作以外のモデルを使う場合は、各モデルの利用規約に従ってご使用ください</u></p>
-        <img src ="image/qa02.png" alt="フォルダサンプル絵" title="フォルダマニュアル">
-        <p>※圧縮フォルダは現在サポートしていません</p>
-        <h1>お問い合わせ</h1>
-        <p>ご意見ご質問、不具合のご報告などありましたら以下フォームからご連絡ください。</p>
-
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScK9pW0-dNsh5pLwQxs_lxZ7kzk95m2S6cpKMjUx46zu1qu5w/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+        <div class="section information">
+            <h1>作品情報</h1>
+            <div class="detail">
+                <p>お好みのキャラクター、ダンス、音楽を組み合わせたライブをVRで確認できるアプリです。</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Iu60nYE4suk" 
+                    ?loop=1
+                    playlist=Iu60nYE4suk
+                    &autoplay=0
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+                <div class="box">
+                    <table>
+                        <tr>
+                            <th>タイトル</th>
+                            <td>Uni Live Viewer</td>
+                        </tr>
+                        <tr>
+                            <th>ジャンル</th>
+                            <td>VRライブビューア</td>
+                        </tr>
+                        <tr>
+                            <th>対応機種</th>
+                            <td>OculusQuest/Oculus Quest2</td>
+                        </tr>
+                        <tr>
+                            <th>制作者</th>
+                            <td>Nanacielという活動名の個人開発者です。</td>
+                        </tr>
+                    </table>
+                    <div class="applab">
+                        <a href="https://www.oculus.com/experiences/quest/4108471262596874/" target="_blank" rel="noopener noreferrer">
+                            <img src ="image/applab.png" alt="applabボタン" title="applab">
+                        </a>
+                        <p><b>DLはこちらから↑</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section faq">
+            <h1>FAQ</h1>
+            <div class="detail">
+                <h3>・アバターモデルやダンスの読み込み方が分からない</h3>
+                <p>アプリ起動時に以下画面が表示されます。</p>
+                <p>ファイルのアクセスを許可して一度アプリを起動すると、アプリ専用フォルダが作成されます。</p>
+                <img src ="image/qa01.png" alt="Questアクセス許可" title="フォルダアクセス許可確認">
+                <p>PCで以下フォルダにアクセスし、詳細はreadmeファイルをご確認ください。</p>
+                <img src ="image/qa02.png" alt="フォルダサンプル絵" title="フォルダマニュアル">
+                <p>※1:自作以外のモデルやモーションを使う場合は、各データの利用規約に従ってください。</p>
+                <p>※2:圧縮フォルダはサポートしていません。</p>
+            </div>
+        </div>
+        <div class="section credit">
+            <h1>クレジット</h1>
+            <div class="detail">
+                <table>
+                    <tr>
+                        <th>モデル・モーション</th>
+                        <td>
+                            <p><a href="https://unity-chan.com/" target="_blank" rel="noopener noreferrer">Unity Technologies Japan</a> / </p>
+                            <p><a href="https://www.store.vket.com/ec/shops/373/detail/" target="_blank" rel="noopener noreferrer">バーチャルマーケット</a> / </p>
+                            <a href="https://www.mixamo.com/#/" target="_blank" rel="noopener noreferrer">Mixamo</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>画像</th>
+                        <td>
+                            <p><a href="https://unity-chan.com/" target="_blank" rel="noopener noreferrer">Unity Technologies Japan</a> / </p>
+                            <p><a href="https://icooon-mono.com/" target="_blank" rel="noopener noreferrer">icooon-mono</a> / </p>
+                            <a href="https://booth.pm/ja/items/1638634" target="_blank" rel="noopener noreferrer">魔法陣 背景ジェネレータ</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>音声</th>
+                        <td>
+                            <p><a href="https://unity-chan.com/"  target="_blank" rel="noopener noreferrer">Unity Technologies Japan</a> / </p>
+                            <p><a href="https://soundeffect-lab.info/" target="_blank" rel="noopener noreferrer">効果音ラボ</a> / </p>
+                            <p><a href="https://maou.audio/" target="_blank" rel="noopener noreferrer">魔王魂</a> / </p>
+                            <a href="https://otologic.jp/" target="_blank" rel="noopener noreferrer">OtoLogic</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>アセット</th>
+                        <td>
+                            <p><a href="https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022?locale=ja-JP" target="_blank" rel="noopener noreferrer">Oculus integration</a> / </p>
+                            <p><a href="https://assetstore.unity.com/packages/tools/physics/magica-cloth-160144?locale=ja-JP" target="_blank" rel="noopener noreferrer">Magica Cloth</a> / </p>
+                            <a href="https://vrm.dev/" target="_blank" rel="noopener noreferrer">UniVRM</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="section inquiry">
+            <h1>お問い合わせ</h1>
+            <div class="detail">
+                <p>ご意見ご質問、不具合のご報告などありましたら以下フォームからご連絡ください。</p>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScK9pW0-dNsh5pLwQxs_lxZ7kzk95m2S6cpKMjUx46zu1qu5w/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+            </div>
+        </div>
     </div>
     <div class="footer">
         <a href="javascript:OnLinkClick_scrUp();">TOPへ</a>
