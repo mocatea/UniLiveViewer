@@ -21,7 +21,7 @@ async function SmoothScroll(isDown){
     //移動量を算出
     var distance = 0;
     if(isDown) distance = ( difference - window.scrollY) / split;
-    else distance = ( -difference  + difference - window.scrollY ) / split
+    else distance = (0 - window.scrollY) / split
     //一定間隔で移動
     for(let i = 0;i<split;i++){
         await sleep(10);
